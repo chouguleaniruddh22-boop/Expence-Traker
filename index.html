@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker System - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>Expense Tracker System</h1>
+        <p>Track Your Income & Expenses</p>
+
+        <form id="loginForm">
+
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter Username" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p id="error"></p>
+
+        <div class="demo">
+            <h4>Demo Login</h4>
+            <p><strong>Username:</strong> admin</p>
+            <p><strong>Password:</strong> 12345</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("loginForm").addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    let username=document.getElementById("username").value;
+    let password=document.getElementById("password").value;
+
+    if(username==="admin" && password==="12345"){
+
+        localStorage.setItem("login","true");
+
+        window.location="dashboard.html";
+
+    }
+    else{
+
+        document.getElementById("error").innerHTML="Invalid Username or Password";
+        document.getElementById("error").style.color="red";
+        document.getElementById("error").style.marginTop="15px";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>

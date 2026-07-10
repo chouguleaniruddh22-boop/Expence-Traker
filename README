@@ -1,0 +1,183 @@
+# Expense Tracker System
+
+## Project Overview
+
+The Expense Tracker System is a simple web-based application developed using HTML, CSS, and JavaScript. It helps users manage their daily income and expenses efficiently. The application performs basic CRUD (Create, Read, Update, Delete) operations and stores data using the browser's Local Storage.
+
+---
+
+# Objectives
+
+* Manage daily income and expense records.
+* Calculate the available balance automatically.
+* View transaction history.
+* Learn front-end web development concepts.
+* Build a simple expense management application.
+
+---
+
+# Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Browser Local Storage
+
+---
+
+# Features
+
+* User Login
+* Add Income
+* Add Expense
+* View Transaction History
+* Delete Transaction
+* Automatic Balance Calculation
+* Local Storage Support
+* Responsive User Interface
+
+---
+
+# ER Diagram
+
+```text
++---------------------------+
+|           USER            |
++---------------------------+
+| User_ID (Primary Key)     |
+| Username                  |
+| Password                  |
++---------------------------+
+            |
+            | Performs
+            |
++---------------------------+
+|       TRANSACTION         |
++---------------------------+
+| Transaction_ID (PK)       |
+| User_ID (FK)              |
+| Title                     |
+| Type                      |
+| Amount                    |
+| Date                      |
++---------------------------+
+```
+
+### Entity Description
+
+| Attribute      | Description           |
+| -------------- | --------------------- |
+| User_ID        | Unique User ID        |
+| Username       | User Login Name       |
+| Password       | User Password         |
+| Transaction_ID | Unique Transaction ID |
+| Title          | Transaction Title     |
+| Type           | Income / Expense      |
+| Amount         | Transaction Amount    |
+| Date           | Transaction Date      |
+
+---
+
+# Project Structure
+
+```text
+Expense-Tracker-System/
+│── index.html
+│── dashboard.html
+│── style.css
+│── script.js
+└── README.md
+```
+
+---
+
+# Software Requirements
+
+* Visual Studio Code
+* Google Chrome / Microsoft Edge / Mozilla Firefox
+* Live Server Extension (Optional)
+
+---
+
+# Hardware Requirements
+
+* Windows 10 / Windows 11
+* Minimum 4 GB RAM
+* Dual-Core Processor
+* 100 MB Free Disk Space
+
+---
+
+# Installation Steps
+
+1. Download the project.
+2. Open the folder in Visual Studio Code.
+3. Open `index.html`.
+4. Run using Live Server or open it directly in a browser.
+
+---
+
+# Demo Login
+
+**Username:** admin
+
+**Password:** 12345
+
+---
+
+# How to Use
+
+1. Login using the demo credentials.
+2. Add Income or Expense.
+3. View the updated balance.
+4. Check transaction history.
+5. Delete transactions if required.
+6. Logout from the application.
+
+---
+
+# Advantages
+
+* Easy to Use
+* Beginner Friendly
+* Fast and Lightweight
+* No Server Required
+* Works Offline
+
+---
+
+# Limitations
+
+* Uses Local Storage only
+* No MySQL Database
+* No Online Access
+* Demo Login Only
+
+---
+
+# Future Enhancements
+
+* User Registration
+* Edit Transaction
+* Search Transaction
+* Export to PDF
+* Export to Excel
+* MySQL Integration
+
+---
+
+# Author
+
+**Name:** Aniruddh Chougule
+
+---
+
+# Version
+
+Version 1.0
+
+---
+
+# License
+
+This project is developed for educational and academic purposes only.
